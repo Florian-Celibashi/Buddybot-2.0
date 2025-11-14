@@ -39,7 +39,6 @@ function startFollow(bot, username) {
         bot.following = username;
         bot.followingTimeout = null;
         bot.followingTimeoutTicks = 0;
-        safeChat(bot, "Okay, I'll follow you.");
     } catch (e) {
         warn('Error setting follow goal:', e && e.message ? e.message : e);
     }
