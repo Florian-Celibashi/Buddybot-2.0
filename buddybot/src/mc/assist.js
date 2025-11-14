@@ -1,6 +1,7 @@
 // src/mc/assist.js
 
 const { warn } = require('../logger');
+const { safeChat } = require('./utils');
 
 /**
  * Assist (combat support) behavior helpers for Buddybot.
@@ -16,8 +17,10 @@ function startAssist(bot, username) {
     bot.assistingTimeoutTicks = 0;
 
     // Give feedback in chat
-    if (typeof bot.chat === 'function') {
-        bot.chat(`Okay, ${username}, I will assist you.`);
+    safeChat(bot, `Okay, ${username}, I will assist you.`);
+
+    if (!bot.pvp) {
+        warn('!assist requested but PVP plugin is not available on bot.');
     }
 }
 
