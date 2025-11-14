@@ -21,7 +21,7 @@ async function generateAIReply(username, message, history) {
             const messages = [
                 { role: 'system', content: SYSTEM_PROMPT },
                 ...(Array.isArray(history) ? history : []),
-                { role: 'user', content: `Player ${username} says: ${message}` }
+                { role: 'user', content: `Player ${username}: ${message}` }
             ];
             const res = await openai.responses.create({
                 model,
