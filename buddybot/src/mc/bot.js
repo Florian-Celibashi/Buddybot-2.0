@@ -11,7 +11,7 @@ const {
     USER_COOLDOWN_MS,
     SPAWN_COOLDOWN_MS,
 } = require('../config');
-const { handleEntityHurt } = require('./assist');
+const { handleEntityHurt, handleStoppedAttacking } = require('./assist');
 const { createChatHandler } = require('./chatHandler');
 
 let botRef = null;
@@ -54,6 +54,7 @@ function spawnBot() {
 
     bot.on('chat', chatHandler);
     bot.on('entityHurt', entityHurtHandler);
+    bot.on('stoppedAttacking', (target) => handleStoppedAttacking(bot, target));
 
     botRef = bot;
     return botRef;

@@ -1,42 +1,316 @@
-[15:17:34] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:17:35] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[15:17:35] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:17:35] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:17:35] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[15:17:35] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[15:17:35] [main/INFO]: Reloading ResourceManager: Default
-[15:17:35] [Worker-Main-14/INFO]: Loaded 7 recipes
-[15:17:36] [Worker-Main-14/INFO]: Loaded 927 advancements
-[15:17:37] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[15:17:37] [Server thread/INFO]: Loading properties
-[15:17:37] [Server thread/INFO]: Default game type: SURVIVAL
-[15:17:37] [Server thread/INFO]: Generating keypair
-[15:17:37] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:17:37] [Server thread/INFO]: Using default channel type
-[15:17:37] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:17:37] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:17:37] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:17:37] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:17:37] [Server thread/INFO]: Preparing level "world"
-[15:17:37] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:17:38] [Server thread/INFO]: Preparing spawn area: 0%
-[15:17:38] [Server thread/INFO]: Preparing spawn area: 0%
-[15:17:38] [Server thread/INFO]: Preparing spawn area: 0%
-[15:17:39] [Server thread/INFO]: Time elapsed: 1827 ms
-[15:17:39] [Server thread/INFO]: Done (1.906s)! For help, type "help"
-[15:18:25] [Server thread/INFO]: RecklessRian[/127.0.0.1:49255] logged in with entity id 149 at (747.1534866868482, 81.0, 252.3565985165441)
-[15:18:25] [Server thread/INFO]: RecklessRian joined the game
-[15:18:43] [Server thread/INFO]: <RecklessRian> !spawn
-[15:18:44] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49257] logged in with entity id 159 at (749.5, 83.0, 238.5)
-[15:18:44] [Server thread/INFO]: Buddybot joined the game
-[15:18:48] [Server thread/INFO]: <RecklessRian> !follow
-[15:18:48] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
-[15:18:48] [Server thread/INFO]: <Buddybot> Okay, I'll follow you.
-[15:18:51] [Server thread/INFO]: <RecklessRian> !assist
-[15:18:51] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
-[15:18:56] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
-[15:19:27] [Server thread/INFO]: <RecklessRian> !follow
-[15:19:27] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
-[15:19:29] [Server thread/INFO]: <RecklessRian> !follow
-[15:19:29] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
-[15:19:29] [Server thread/INFO]: <Buddybot> Okay, I'll follow you.
+[16:17:51] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:17:51] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:17:51] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:17:51] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:17:51] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:17:51] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:17:51] [main/INFO]: Reloading ResourceManager: Default
+[16:17:52] [Worker-Main-12/INFO]: Loaded 7 recipes
+[16:17:52] [Worker-Main-12/INFO]: Loaded 927 advancements
+[16:17:53] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[16:17:53] [Server thread/INFO]: Loading properties
+[16:17:53] [Server thread/INFO]: Default game type: SURVIVAL
+[16:17:53] [Server thread/INFO]: Generating keypair
+[16:17:53] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:17:53] [Server thread/INFO]: Using default channel type
+[16:17:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:17:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:17:53] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:17:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:17:53] [Server thread/INFO]: Preparing level "world"
+[16:17:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:17:54] [Server thread/INFO]: Preparing spawn area: 0%
+[16:17:54] [Server thread/INFO]: Preparing spawn area: 0%
+[16:17:54] [Server thread/INFO]: Preparing spawn area: 0%
+[16:17:55] [Server thread/INFO]: Preparing spawn area: 56%
+[16:17:55] [Server thread/INFO]: Time elapsed: 2243 ms
+[16:17:55] [Server thread/INFO]: Done (2.298s)! For help, type "help"
+[16:18:08] [Server thread/INFO]: RecklessRian[/127.0.0.1:49382] logged in with entity id 149 at (746.5133366785501, 83.0, 236.8798248761731)
+[16:18:08] [Server thread/INFO]: RecklessRian joined the game
+[16:18:11] [Server thread/INFO]: <RecklessRian> !spawn
+[16:18:12] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49384] logged in with entity id 153 at (746.3244670523128, 82.0, 242.5598787042576)
+[16:18:12] [Server thread/INFO]: Buddybot joined the game
+[16:18:16] [Server thread/INFO]: <RecklessRian> !follow
+[16:18:16] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:18:16] [Server thread/INFO]: <Buddybot> Okay, I'll follow you.
+[16:18:25] [Server thread/INFO]: <RecklessRian> !assist
+[16:18:25] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:18:39] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:18:47] [Server thread/INFO]: [RecklessRian: Set own game mode to Survival Mode]
+[16:18:51] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:18:51] [Server thread/INFO]: Buddybot was slain by Zombie
+[16:19:08] [Server thread/INFO]: <RecklessRian> !follow
+[16:19:08] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:19:10] [Server thread/INFO]: <RecklessRian> !follow
+[16:19:10] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:19:10] [Server thread/INFO]: <Buddybot> Okay, I'll follow you.
+[16:20:28] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:30:46] [Server thread/INFO]: <RecklessRian> !despawn
+[16:30:46] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[16:30:46] [Server thread/INFO]: Buddybot left the game
+[16:32:35] [Server thread/INFO]: <RecklessRian> !spawn
+[16:32:36] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49419] logged in with entity id 1539 at (730.561861267499, 75.0, 240.36932427690695)
+[16:32:36] [Server thread/INFO]: Buddybot joined the game
+[16:32:39] [Server thread/INFO]: <RecklessRian> !follow
+[16:32:39] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:32:40] [Server thread/INFO]: <RecklessRian> !assist
+[16:32:40] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:32:43] [Server thread/INFO]: [RecklessRian: Summoned new Zoglin]
+[16:32:58] [Server thread/INFO]: RecklessRian was slain by Zoglin
+[16:33:00] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:33:01] [Server thread/INFO]: [RecklessRian: Set own game mode to Creative Mode]
+[16:33:16] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:33:31] [Server thread/INFO]: RecklessRian fell out of the world
+[16:33:31] [Server thread/INFO]: Buddybot didn't want to live in the same world as Zoglin
+[16:33:31] [Server thread/INFO]: [RecklessRian: Killed 155 entities]
+[16:33:31] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:33:50] [Server thread/INFO]: RecklessRian lost connection: Disconnected
+[16:33:50] [Server thread/INFO]: RecklessRian left the game
+[16:33:53] [Server thread/INFO]: RecklessRian[/127.0.0.1:49423] logged in with entity id 1859 at (743.4794190210098, 82.0, 245.43121108235113)
+[16:33:53] [Server thread/INFO]: RecklessRian joined the game
+[16:34:03] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:34:07] [Server thread/INFO]: <RecklessRian> !assist
+[16:34:07] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:37:26] [Server thread/INFO]: <RecklessRian> @bb :(
+[16:37:29] [Server thread/INFO]: <Buddybot> Say: Whats wrong, RecklessRian? Need help with something in your world or a command?
+[16:37:50] [Server thread/INFO]: <RecklessRian> @bb i
+[16:37:52] [Server thread/INFO]: <Buddybot> Say: I what, RecklessRian? Tell me the whole thing you want to do, like place blocks, fix redstone, or write a command.
+[16:38:06] [Server thread/INFO]: <RecklessRian> @bb im 5
+[16:38:08] [Server thread/INFO]: <Buddybot> Say: Thats cool, RecklessRian. Want to build something simple together, like a small house or a secret base?
+[16:39:05] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[16:39:05] [Server thread/INFO]: Buddybot left the game
+[16:39:09] [Server thread/INFO]: <RecklessRian> !spawn
+[16:39:11] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49438] logged in with entity id 2353 at (750.3, 68.0, 218.54112686493)
+[16:39:11] [Server thread/INFO]: Buddybot joined the game
+[16:39:12] [Server thread/INFO]: <RecklessRian> !follow
+[16:39:13] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:39:15] [Server thread/INFO]: <RecklessRian> !assist
+[16:39:15] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:39:22] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:39:36] [Server thread/INFO]: [RecklessRian: Gave 1 [Diamond Sword] to Buddybot]
+[16:39:49] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:40:01] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:40:29] [Server thread/INFO]: [RecklessRian: Summoned new Creeper]
+[16:40:35] [Server thread/INFO]: [RecklessRian: Summoned new Creeper]
+[16:40:37] [Server thread/INFO]: Buddybot was blown up by Creeper
+[16:40:50] [Server thread/INFO]: [RecklessRian: Gave 1 [Diamond Sword] to Buddybot]
+[16:40:55] [Server thread/INFO]: [RecklessRian: Summoned new Creeper]
+[16:48:42] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[16:48:42] [Server thread/INFO]: Buddybot left the game
+[16:48:47] [Server thread/INFO]: <RecklessRian> !spawn
+[16:48:48] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49462] logged in with entity id 3257 at (748.5, 83.0, 238.5)
+[16:48:48] [Server thread/INFO]: Buddybot joined the game
+[16:48:50] [Server thread/INFO]: <RecklessRian> @bb hi
+[16:48:52] [Server thread/INFO]: <Buddybot> Hi RecklessRian! What can I help you with in Minecraft today?
+[16:53:55] [Server thread/INFO]: <RecklessRian> !follow
+[16:53:55] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:53:57] [Server thread/INFO]: <RecklessRian> !assist
+[16:53:57] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:54:05] [Server thread/INFO]: [RecklessRian: Summoned new Zoglin]
+[16:54:18] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:54:18] [Server thread/INFO]: <RecklessRian> !assist
+[16:54:19] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:54:36] [Server thread/INFO]: Buddybot fell from a high place
+[16:54:49] [Server thread/INFO]: [RecklessRian: Gamerule keepInventory is now set to: true]
+[16:54:50] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:54:59] [Server thread/INFO]: [RecklessRian: Gave 1 [Diamond Sword] to Buddybot]
+[16:55:04] [Server thread/INFO]: <RecklessRian> !assist
+[16:55:04] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:55:04] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:55:12] [Server thread/INFO]: <RecklessRian> !follow
+[16:55:12] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:55:17] [Server thread/INFO]: <RecklessRian> !assist
+[16:55:17] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:55:18] [Server thread/INFO]: Buddybot was slain by Zoglin
+[16:55:30] [Server thread/INFO]: [RecklessRian: Set own game mode to Survival Mode]
+[16:55:36] [Server thread/INFO]: Buddybot lost connection: Attempting to attack an invalid entity
+[16:55:36] [Server thread/INFO]: Buddybot left the game
+[16:55:36] [Server thread/WARN]: Player Buddybot tried to attack an invalid entity
+[16:55:36] [Server thread/WARN]: handleDisconnection() called twice
+[16:55:42] [Server thread/INFO]: [RecklessRian: Set own game mode to Creative Mode]
+[16:57:04] [Server thread/INFO]: [RecklessRian: Set own game mode to Survival Mode]
+[16:57:32] [Server thread/INFO]: RecklessRian was slain by Zoglin
+[16:57:58] [Server thread/INFO]: [RecklessRian: Set own game mode to Creative Mode]
+[16:58:00] [Server thread/INFO]: <RecklessRian> !spawn
+[16:58:01] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49529] logged in with entity id 4142 at (746.6393906066301, 81.0, 248.52807057293137)
+[16:58:01] [Server thread/INFO]: Buddybot joined the game
+[16:58:05] [Server thread/INFO]: <RecklessRian> !assist
+[16:58:05] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:58:14] [Server thread/INFO]: <RecklessRian> !follow
+[16:58:14] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:58:21] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:58:29] [Server thread/INFO]: <RecklessRian> !follow
+[16:58:29] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:58:35] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:58:37] [Server thread/INFO]: Buddybot was slain by Zombie
+[16:58:42] [Server thread/INFO]: <RecklessRian> !follow
+[16:58:42] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:58:44] [Server thread/INFO]: <RecklessRian> !summon
+[16:58:51] [Server thread/INFO]: <RecklessRian> !assist
+[16:58:51] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:58:58] [Server thread/INFO]: <RecklessRian> !assist
+[16:58:58] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[16:59:01] [Server thread/INFO]: <RecklessRian> !summon
+[16:59:04] [Server thread/INFO]: <RecklessRian> !follow
+[16:59:04] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:59:07] [Server thread/INFO]: <RecklessRian> !follow
+[16:59:07] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[16:59:10] [Server thread/INFO]: <RecklessRian> !spawn
+[16:59:17] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[16:59:26] [Server thread/INFO]: <RecklessRian> follow!
+[16:59:32] [Server thread/INFO]: <RecklessRian> !follow
+[16:59:32] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[16:59:41] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:05:08] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:05:08] [Server thread/INFO]: Buddybot left the game
+[17:05:13] [Server thread/INFO]: <RecklessRian> !spawn
+[17:05:14] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49557] logged in with entity id 4836 at (749.5, 82.0, 240.5)
+[17:05:14] [Server thread/INFO]: Buddybot joined the game
+[17:05:21] [Server thread/INFO]: <RecklessRian> !follow
+[17:05:21] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[17:05:43] [Server thread/INFO]: <RecklessRian> !follow
+[17:05:43] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[17:05:58] [Server thread/INFO]: [RecklessRian: Set the time to 13000]
+[17:06:17] [Server thread/INFO]: <RecklessRian> !follow
+[17:06:17] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[17:07:29] [Server thread/INFO]: [RecklessRian: Set own game mode to Survival Mode]
+[17:07:31] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:07:40] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:07:48] [Server thread/INFO]: [RecklessRian: Set own game mode to Creative Mode]
+[17:11:41] [Server thread/WARN]: Buddybot moved wrongly!
+[17:12:31] [Server thread/INFO]: [RecklessRian: Set own game mode to Survival Mode]
+[17:12:33] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:12:43] [Server thread/INFO]: <RecklessRian> !assist
+[17:12:43] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[17:12:47] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:12:58] [Server thread/INFO]: <RecklessRian> !assist
+[17:12:58] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[17:13:03] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:15:54] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:15:54] [Server thread/INFO]: Buddybot left the game
+[17:16:01] [Server thread/INFO]: <RecklessRian> !spawn
+[17:16:02] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49583] logged in with entity id 5944 at (748.5250696333344, 81.0, 248.5)
+[17:16:02] [Server thread/INFO]: Buddybot joined the game
+[17:16:05] [Server thread/INFO]: <RecklessRian> !assist
+[17:16:05] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[17:16:07] [Server thread/INFO]: <RecklessRian> !assist
+[17:16:07] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I'll stop assisting you.
+[17:16:12] [Server thread/INFO]: <RecklessRian> !follow
+[17:16:12] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[17:16:14] [Server thread/INFO]: <RecklessRian> !follow
+[17:16:14] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[17:16:17] [Server thread/INFO]: <RecklessRian> !follow
+[17:16:17] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[17:16:21] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:16:30] [Server thread/INFO]: <RecklessRian> !assist
+[17:16:30] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[17:16:34] [Server thread/INFO]: <RecklessRian> !assist
+[17:16:34] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I'll stop assisting you.
+[17:16:36] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:16:51] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:21:03] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:21:03] [Server thread/INFO]: Buddybot left the game
+[17:21:08] [Server thread/INFO]: <RecklessRian> !spawn
+[17:21:09] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49595] logged in with entity id 6395 at (744.4997266643509, 81.0, 249.5)
+[17:21:10] [Server thread/INFO]: Buddybot joined the game
+[17:21:10] [Server thread/INFO]: <RecklessRian> !spawn
+[17:21:12] [Server thread/INFO]: <RecklessRian> !despawn
+[17:21:12] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:21:12] [Server thread/INFO]: Buddybot left the game
+[17:21:14] [Server thread/INFO]: <RecklessRian> !despawn
+[17:21:16] [Server thread/INFO]: <RecklessRian> !spawn
+[17:21:16] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49598] logged in with entity id 6408 at (744.4997266643509, 81.0, 249.5)
+[17:21:16] [Server thread/INFO]: Buddybot joined the game
+[17:21:21] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:21:25] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:21:25] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, friendly fire is now ON. I won't fight back when players hit me.
+[17:21:44] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:21:44] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, friendly fire is now OFF. I'll defend myself against players again.
+[17:21:48] [Server thread/INFO]: RecklessRian was slain by Buddybot
+[17:22:01] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:22:01] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, friendly fire is now ON. I won't fight back when players hit me.
+[17:22:10] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:22:11] [Server thread/INFO]: [RecklessRian: Set own game mode to Creative Mode]
+[17:22:17] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:22:17] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, friendly fire is now OFF. I'll defend myself against players again.
+[17:22:27] [Server thread/INFO]: [RecklessRian: Summoned new Zombie]
+[17:22:29] [Server thread/INFO]: Buddybot was slain by Zombie
+[17:26:25] [Server thread/INFO]: <RecklessRian> !follow
+[17:26:25] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will follow you.
+[17:26:27] [Server thread/INFO]: <RecklessRian> !follow
+[17:26:27] [Server thread/INFO]: <Buddybot> Okay, I'll stop following you.
+[17:26:38] [Server thread/INFO]: <RecklessRian> !assist
+[17:26:38] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I will assist you.
+[17:26:40] [Server thread/INFO]: <RecklessRian> !assist
+[17:26:40] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, I'll stop assisting you.
+[17:31:10] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:31:10] [Server thread/INFO]: Buddybot left the game
+[17:31:17] [Server thread/INFO]: <RecklessRian> !spawn
+[17:31:17] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49619] logged in with entity id 7378 at (742.8471088948666, 81.0, 240.84669567346805)
+[17:31:17] [Server thread/INFO]: Buddybot joined the game
+[17:31:24] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:31:24] [Server thread/INFO]: <Buddybot> Okay, RecklessRian, Even good allies clash blades by accident. If it happens again, I’ll stand my ground without striking back.
+[17:32:02] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:32:02] [Server thread/INFO]: <Buddybot> Very well, RecklessRian. If you seek a true duel, I will raise my blade and meet you with honor.
+[17:39:07] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:39:07] [Server thread/INFO]: Buddybot left the game
+[17:39:11] [Server thread/INFO]: <RecklessRian> !spawn
+[17:39:11] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49633] logged in with entity id 8103 at (742.8471088948666, 81.0, 240.84669567346805)
+[17:39:11] [Server thread/INFO]: Buddybot joined the game
+[17:39:16] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:39:19] [Server thread/INFO]: <Buddybot> Looks like you pasted an object instead of a message; what would you like to know or do with the player RecklessRian?
+[17:39:32] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:39:34] [Server thread/INFO]: <Buddybot> Looks like you pasted a raw data object instead of a message; what would you like to know or do with the player RecklessRian?
+[17:45:09] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:45:09] [Server thread/INFO]: Buddybot left the game
+[17:45:17] [Server thread/INFO]: <RecklessRian> !spawn
+[17:45:18] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49649] logged in with entity id 8670 at (742.8471088948666, 81.0, 240.84669567346805)
+[17:45:18] [Server thread/INFO]: Buddybot joined the game
+[17:45:20] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:45:22] [Server thread/INFO]: <Buddybot> Looks like you pasted an object instead of a message; what do you want to know or do with player RecklessRian?
+[17:45:38] [Server thread/INFO]: <RecklessRian> @bb what was that
+[17:45:39] [Server thread/INFO]: <Buddybot> It was a chat message from the player RecklessRian mentioning you with @bb and asking "what was that".
+[17:45:48] [Server thread/INFO]: <RecklessRian> @bb hi
+[17:45:50] [Server thread/INFO]: <Buddybot> Hi RecklessRian! What do you want help with?
+[17:49:45] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:49:45] [Server thread/INFO]: Buddybot left the game
+[17:49:51] [Server thread/INFO]: <RecklessRian> !spawn
+[17:49:52] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49666] logged in with entity id 9056 at (742.8471088948666, 81.0, 240.84669567346805)
+[17:49:52] [Server thread/INFO]: Buddybot joined the game
+[17:49:54] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:49:54] [Server thread/INFO]: <Buddybot> Battle gets messy, RecklessRian. If your sword clips me, I'll trust it's a friendly swing and stay my hand.
+[17:50:04] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:50:04] [Server thread/INFO]: <Buddybot> A duel, then, RecklessRian? If you strike me now, I'll answer with steel as your worthy opponent.
+[17:51:40] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:51:40] [Server thread/INFO]: <Buddybot> I know you don't mean every hit, RecklessRian. I'll endure your stray blows without fighting back.
+[17:51:58] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:51:58] [Server thread/INFO]: <Buddybot> Very well, RecklessRian. From this moment, if you test my armor, I'll test yours right back.
+[17:52:10] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:52:10] [Server thread/INFO]: <Buddybot> Even good allies clash blades by accident, RecklessRian. If it happens again, I'll stand my ground without striking back.
+[17:56:18] [Server thread/INFO]: Buddybot lost connection: Disconnected
+[17:56:18] [Server thread/INFO]: Buddybot left the game
+[17:56:22] [Server thread/INFO]: <RecklessRian> !spawn
+[17:56:22] [Server thread/INFO]: Buddybot[/[0:0:0:0:0:0:0:1]:49683] logged in with entity id 9667 at (750.5, 81.0, 245.49999999999937)
+[17:56:22] [Server thread/INFO]: Buddybot joined the game
+[17:56:27] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:56:29] [Server thread/INFO]: <Buddybot> RecklessRian, the bonds of battle are tested but fear not—Buddybot shall not strike back for friendly fire now that it’s ON!
+[17:56:53] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:56:55] [Server thread/INFO]: <Buddybot> RecklessRian, with friendly fire off, my fists shall strike back fiercely should you dare land a blow!
+[17:57:22] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:57:24] [Server thread/INFO]: <Buddybot> RecklessRian, the gauntlet is thrown—friendly fire ON means I shall bear your accidental blows with the patience of a thousand Endermen!
+[17:57:39] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:57:40] [Server thread/INFO]: <Buddybot> RecklessRian, the peace is shattered—prepare for my retaliation, for I shall strike back when struck!
+[17:57:58] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:57:58] [Server thread/INFO]: <Buddybot> RecklessRian, your wish is my command—my steel shall not strike allies, even if fate’s hand falters!
+[17:58:28] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[17:58:28] [Server thread/INFO]: <Buddybot> RecklessRian, your wish is my command—strike me down, and I shall rise to duel with fiery vengeance!
+[18:03:13] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[18:03:14] [Server thread/INFO]: <Buddybot> RecklessRian, the battlefield grows perilous, but fear not—Buddybot shall endure your friendly strikes without retaliation!
+[18:06:24] [Server thread/WARN]: Buddybot moved wrongly!
+[18:06:24] [Server thread/WARN]: Buddybot moved wrongly!
+[18:07:36] [Server thread/INFO]: <RecklessRian> !friendlyfire
+[18:07:36] [Server thread/INFO]: <Buddybot> RecklessRian, the gauntlet is thrown—strike me, and you shall feel my wrath!
+[18:09:25] [Server thread/INFO]: RecklessRian lost connection: Disconnected
+[18:09:25] [Server thread/INFO]: RecklessRian left the game
+[18:09:30] [Server thread/INFO]: RecklessRian[/127.0.0.1:49715] logged in with entity id 10874 at (754.7903138267883, 81.0, 234.05290604123618)
+[18:09:30] [Server thread/INFO]: RecklessRian joined the game
