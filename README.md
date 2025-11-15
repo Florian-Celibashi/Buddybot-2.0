@@ -1,8 +1,7 @@
 # BuddyBot 🐺🤖  
 _A GPT-powered companion for your Minecraft server_
 
-BuddyBot is a Minecraft bot that **lives in your world**, follows you around, helps in combat, and chats using OpenAI’s models.  
-It’s built as a small but extensible playground for:
+Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models to answer your in-game questions and fight by your side.
 
 - Game AI
 - LLM-driven behavior
@@ -14,6 +13,7 @@ It’s built as a small but extensible playground for:
 
 - **Follow mode** – `!follow <player>`  
   BuddyBot locks onto a player and follows them around, pathfinding around blocks and obstacles.
+  When !follow mode is enabled, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
 
 - **Assist mode** – `!assist <player>`  
   BuddyBot helps in combat: it will target threats near the assisted player (mobs, etc.) when this is enabled.
