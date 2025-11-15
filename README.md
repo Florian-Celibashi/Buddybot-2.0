@@ -11,11 +11,11 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 
 ## ✨ Features
 
-- **Follow mode** – `!follow <player>`  
+- **Follow mode** – `!follow`  
   BuddyBot locks onto a player and follows them around, pathfinding around blocks and obstacles.
   When !follow mode is enabled, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
 
-- **Assist mode** – `!assist <player>`  
+- **Assist mode** – `!assist`  
   BuddyBot helps in combat: it will target threats near the assisted player (mobs, etc.) when this is enabled.
 
 - **Friendly fire toggle** – `!friendlyfire`  
@@ -23,8 +23,8 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
   - _“Ignore friendly damage”_ (shrugs off accidental hits / playful punches)
   - _“Duel mode”_ (BuddyBot will treat you as a valid combat target)
 
-- **Spawn / lifecycle commands** – `!spawn`, `!stop` (or similar)  
-  Start/stop the bot cleanly from Minecraft chat (exact commands can be tweaked in `commands.js`).
+- **Spawn / lifecycle commands** – `!spawn`, `!despawn` (or similar)  
+  Start/quit the bot cleanly from Minecraft chat (exact commands can be tweaked in `commands.js`).
 
 - **LLM-powered chat** – Talk to BuddyBot in Minecraft chat  
   Messages can be piped to OpenAI’s API so BuddyBot can role-play, explain mechanics, or just hang out.
