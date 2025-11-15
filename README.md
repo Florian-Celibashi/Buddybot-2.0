@@ -14,10 +14,10 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 - **Self-Defense** - Buddybot automatically retaliates against any entity that attacks him.
 - **Follow mode** – `!follow`  
   BuddyBot locks onto a player and follows them around, pathfinding around blocks and obstacles.
-  When !follow mode is enabled, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
+  When !follow mode is toggled on, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
 
 - **Assist mode** – `!assist`  
-  BuddyBot helps in combat: it will target threats near the assisted player (mobs, etc.) when this is enabled.
+  When enabled, Buddybot joins the fight: he attacks any mob you attack, as well as any mob that attacks you.
 
 - **Friendly fire toggle** – `!friendlyfire`  
   Switch between:
