@@ -40,30 +40,30 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 
 ## 🧱 Tech Stack
 
-Runtime & Environment
-	•	Node.js (CommonJS)
-	•	Designed for Minecraft Java Edition 1.16.5
-	•	Launched with npm start → runs src/main.js
+**Runtime & Environment**
+Node.js (CommonJS)
+Designed for Minecraft Java Edition 1.16.5
+Launched with npm start → runs src/main.js
 
-Core Libraries
-	•	mineflayer — base Minecraft bot API
-	•	mineflayer-pathfinder — navigation & pathfinding
-	•	mineflayer-pvp — combat behaviors
-	•	minecraft-data — block & item metadata
-	•	dotenv — environment configuration
-	•	OpenAI Responses API — LLM chat + reasoning
+**Core Libraries**
+mineflayer — base Minecraft bot API
+mineflayer-pathfinder — navigation & pathfinding
+mineflayer-pvp — combat behaviors
+minecraft-data — block & item metadata
+dotenv — environment configuration
+OpenAI Responses API — LLM chat + reasoning
 
-Config (Environment Variables)
-	•	BOT_USERNAME — Minecraft bot username
-	•	MC_HOST, MC_PORT — server connection
-	•	OPENAI_50_API_KEY or OPENAI_API_KEY — OpenAI credentials
-	•	OPENAI_MODEL — model name (fallbacks handled automatically)
-	•	LOG_PATH — path to Minecraft server log (defaults to mc-server/logs/latest.log)
+**Config (Environment Variables)**
+BOT_USERNAME — Minecraft bot username
+MC_HOST, MC_PORT — server connection
+OPENAI_50_API_KEY or OPENAI_API_KEY — OpenAI credentials
+OPENAI_MODEL — model name (fallbacks handled automatically)
+LOG_PATH — path to Minecraft server log (defaults to mc-server/logs/latest.log)
 
-Purpose
-	•	Combine real-time Minecraft events (log parsing, chat commands, combat triggers)
-	•	With LLM-powered responses and decision-making
-	•	All while remaining modular and easy to extend
+**Purpose**
+Combine real-time Minecraft events (log parsing, chat commands, combat triggers)
+With LLM-powered responses and decision-making
+All while remaining modular and easy to extend
 
 ## 🏗 Architecture Overview
 Startup & Lifecycle – npm start → node index.js → start() in src/main.js. A log watcher tails mc-server/logs/latest.log 
