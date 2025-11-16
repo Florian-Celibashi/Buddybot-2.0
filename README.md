@@ -1,4 +1,4 @@
-# BuddyBot – GPT-Powered Minecraft Companion
+# BuddyBot 2.0 – GPT-Powered Minecraft Companion
 
 ## 🧭 Overview
 - BuddyBot is a Mineflayer-driven Minecraft assistant that blends OpenAI reasoning with in-game automation.
