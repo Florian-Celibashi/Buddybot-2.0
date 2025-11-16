@@ -40,34 +40,41 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 
 ## 🧱 Tech Stack
 
-- **Technologies:** Node.js, JavaScript, Mineflayer
-- **AI / LLM:** OpenAI API (`gpt-5.1`)
-- **Runtime:** Minecraft 1.16.5 **Java Edition** server
+  • Runtime & Target – Node.js (CommonJS), launched with npm start (node index.js), designed for a Minecraft Java server (tested with 1.16.5).
+	•	Key Libraries – Mineflayer (bot), mineflayer-pathfinder (navigation), mineflayer-pvp (combat), minecraft-data (version metadata), dotenv (config), and the OpenAI SDK        for chat replies.
+	•	Configuration (env vars) –
+	•	BOT_USERNAME – Minecraft login name (default: "Buddybot").
+	•	MC_HOST, MC_PORT – Minecraft server address.
+	•	OPENAI_5O_API_KEY or OPENAI_API_KEY – OpenAI credentials.
+	•	OPENAI_MODEL – Preferred model name; code falls back if unavailable.
+	•	LOG_PATH – Path to the Minecraft log to watch (default: mc-server/logs/latest.log).
 
-The code is structured roughly like this:
-
-- `src/mc/bot.js` – creates and configures the Mineflayer bot
-- `src/mc/commands/commands.js` – parses chat messages like `!follow`, `!assist`, etc.
-- `src/mc/commands/follow.js` – follow logic (`startFollow`, `stopFollow`, …)
-- `src/mc/commands/assist.js` – combat assist logic
-- `src/mc/commands/friendlyFire.js` – toggling damage behavior
-- `src/llm/` – OpenAI client and prompt logic (model, system prompt, etc.)
-
-_(File names may differ slightly depending on the current refactor, but this is the general layout.)_
+## 🏗 Architecture Overview
+  •	Startup & Lifecycle – npm start → node index.js → start() in src/main.js. A log watcher tails mc-server/logs/latest.log 
+    and spawns/despawns the Mineflayer bot when players type !spawn / !despawn, so the bot only runs on demand.
+	•	Command Handling – Chat lines go through createChatHandler, which runs handleCommand (!follow, !assist, !friendlyfire, !despawn), 
+    checks mentions (@botname / @bb), and enforces per-user cooldowns. Follow uses GoalFollow, assist wires in combat/self-defense, 
+    and friendly-fire toggles a boolean that changes how the bot reacts to player hits.
+	•	LLM Integration – On a valid mention, the handler logs the message in memory.js, builds a prompt (system prompt + history + latest user line),
+    and calls the OpenAI Responses API with model fallbacks. Replies are trimmed to MAX_CHAT_LEN and sent back via safeChat, keeping conversation history for context.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Dependencies
-
-- **Node.js** ≥ 18
-- **npm** or **yarn**
-- A **Minecraft Java Edition server** you can connect to
-- An **OpenAI API key**
-
-### 2. Clone the repo
+### 1. Install
 
 ```bash
 git clone https://github.com/Florian-Celibashi/BuddyBot-2.git
 cd BuddyBot-2
+npm install
+```
+### 2. Configure
+Create a .env next to package.json (or export env vars) with BOT_USERNAME, MC_HOST, MC_PORT, an OpenAI key, optional OPENAI_MODEL, 
+and LOG_PATH if your logs aren’t in the default location (see src/config.js).
+
+### 3. Run
+Start your Minecraft Java server so it’s writing chat logs, then launch Buddybot:
+```bash
+npm start
+```
