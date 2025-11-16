@@ -69,5 +69,5 @@ _(File names may differ slightly depending on the current refactor, but this is 
 ### 2. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/BuddyBot-2.git
+git clone https://github.com/Florian-Celibashi/BuddyBot-2.git
 cd BuddyBot-2
