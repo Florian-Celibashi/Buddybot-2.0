@@ -95,6 +95,3 @@ Buddybot-2/
 - Persistent knowledge base (vector store) for multi-session memory.
 - Voice chat / speech-to-text integration for proximity chat servers.
 - Automated resource gathering + crafting macros tied to GPT plans.
-
-## 📜 License
-Released under the ISC License. See `package.json` for details.
