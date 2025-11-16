@@ -40,23 +40,23 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 
 ## 🧱 Tech Stack
 
-  • Runtime & Target – Node.js (CommonJS), launched with npm start (node index.js), designed for a Minecraft Java server (tested with 1.16.5).
-	•	Key Libraries – Mineflayer (bot), mineflayer-pathfinder (navigation), mineflayer-pvp (combat), minecraft-data (version metadata), dotenv (config), and the OpenAI SDK        for chat replies.
-	•	Configuration (env vars) –
-	•	BOT_USERNAME – Minecraft login name (default: "Buddybot").
-	•	MC_HOST, MC_PORT – Minecraft server address.
-	•	OPENAI_5O_API_KEY or OPENAI_API_KEY – OpenAI credentials.
-	•	OPENAI_MODEL – Preferred model name; code falls back if unavailable.
-	•	LOG_PATH – Path to the Minecraft log to watch (default: mc-server/logs/latest.log).
+Runtime & Target – Node.js (CommonJS), launched with npm start (node index.js), designed for a Minecraft Java server (tested with 1.16.5).
+Key Libraries – Mineflayer (bot), mineflayer-pathfinder (navigation), mineflayer-pvp (combat), minecraft-data (version metadata), dotenv (config), and the OpenAI SDK        for chat replies.
+Configuration (env vars) –
+BOT_USERNAME – Minecraft login name (default: "Buddybot").
+MC_HOST, MC_PORT – Minecraft server address.
+OPENAI_5O_API_KEY or OPENAI_API_KEY – OpenAI credentials.
+OPENAI_MODEL – Preferred model name; code falls back if unavailable.
+LOG_PATH – Path to the Minecraft log to watch (default: mc-server/logs/latest.log).
 
 ## 🏗 Architecture Overview
-  •	Startup & Lifecycle – npm start → node index.js → start() in src/main.js. A log watcher tails mc-server/logs/latest.log 
-    and spawns/despawns the Mineflayer bot when players type !spawn / !despawn, so the bot only runs on demand.
-	•	Command Handling – Chat lines go through createChatHandler, which runs handleCommand (!follow, !assist, !friendlyfire, !despawn), 
-    checks mentions (@botname / @bb), and enforces per-user cooldowns. Follow uses GoalFollow, assist wires in combat/self-defense, 
-    and friendly-fire toggles a boolean that changes how the bot reacts to player hits.
-	•	LLM Integration – On a valid mention, the handler logs the message in memory.js, builds a prompt (system prompt + history + latest user line),
-    and calls the OpenAI Responses API with model fallbacks. Replies are trimmed to MAX_CHAT_LEN and sent back via safeChat, keeping conversation history for context.
+Startup & Lifecycle – npm start → node index.js → start() in src/main.js. A log watcher tails mc-server/logs/latest.log 
+and spawns/despawns the Mineflayer bot when players type !spawn / !despawn, so the bot only runs on demand.
+Command Handling – Chat lines go through createChatHandler, which runs handleCommand (!follow, !assist, !friendlyfire, !despawn), 
+checks mentions (@botname / @bb), and enforces per-user cooldowns. Follow uses GoalFollow, assist wires in combat/self-defense, 
+and friendly-fire toggles a boolean that changes how the bot reacts to player hits.
+LLM Integration – On a valid mention, the handler logs the message in memory.js, builds a prompt (system prompt + history + latest user line),
+and calls the OpenAI Responses API with model fallbacks. Replies are trimmed to MAX_CHAT_LEN and sent back via safeChat, keeping conversation history for context.
 
 ---
 
