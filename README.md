@@ -1,4 +1,4 @@
-# Ava AI Assistant (Buddybot-2)
+# Buddybot-2
 _A context-aware Minecraft companion that brings OpenAI-powered insight directly into your server chat._
 
 ## 🌐 Live Demo
