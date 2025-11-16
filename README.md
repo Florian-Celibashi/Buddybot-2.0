@@ -1,4 +1,4 @@
-# BuddyBot 🐺🤖  
+# BuddyBot 🤖  
 _A GPT-powered companion for your Minecraft server_
 
 Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models to answer your in-game questions and fight by your side.
