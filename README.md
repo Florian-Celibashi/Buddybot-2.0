@@ -12,23 +12,26 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 ## ✨ Features
 
 - **Self-Defense** - Buddybot automatically retaliates against any entity that attacks him.
-- **Follow mode** – `!follow`  
+  
+- **Follow mode toggle** – `!follow`  
   BuddyBot locks onto a player and follows them around, pathfinding around blocks and obstacles.
-  When !follow mode is toggled on, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
+  When enabled, Buddybot intelligently breaks or places blocks as needed to navigate the terrain and reach the player.
 
-- **Assist mode** – `!assist`  
-  When enabled, Buddybot joins the fight: he attacks any mob you attack, as well as any mob that attacks you.
+- **Assist mode toggle** – `!assist`  
+  When enabled, Buddybot joins the fight: he attacks any mob player attacks, as well as any mob that attacks the player.
 
 - **Friendly fire toggle** – `!friendlyfire`  
   Switch between:
   - _“Ignore friendly damage”_ (shrugs off accidental hits / playful punches)
-  - _“Duel mode”_ (BuddyBot will treat you as a valid combat target)
+  - _“Duel mode”_ (buddybot will fight back against any player who attacks him)
 
-- **Spawn / lifecycle commands** – `!spawn`, `!despawn` (or similar)  
+- **Spawn commands** – `!spawn`, `!despawn`
   Start/quit the bot cleanly from Minecraft chat (exact commands can be tweaked in `commands.js`).
 
-- **LLM-powered chat** – Talk to BuddyBot in Minecraft chat  
-  Messages can be piped to OpenAI’s API so BuddyBot can role-play, explain mechanics, or just hang out.
+- **LLM-powered chat** – Talk to BuddyBot in Minecraft chat
+  BuddyBot uses OpenAI’s latest language models to answer your in-game questions instantly. Ask about crafting recipes, mob behavior,
+  redstone logic, or general gameplay tips — BuddyBot provides fast, accurate help to players without having to leave the game.
+  Just make sure to start your message with @bb or @buddybot to get his attention.
 
 - **Modular command system**  
   Commands like follow/assist/friendlyfire are split into their own modules, making it easy to add new ones.
@@ -37,10 +40,9 @@ Buddybot is an AI-driven Minecraft companion that uses OpenAI’s latest models 
 
 ## 🧱 Tech Stack
 
-- **Language:** Node.js (JavaScript)
-- **Game integration:** [mineflayer](https://github.com/PrismarineJS/mineflayer)
-- **AI / LLM:** OpenAI API (e.g. `gpt-4.1`, `gpt-4.1-mini`, etc.)
-- **Runtime:** Minecraft **Java Edition** server
+- **Technologies:** Node.js, JavaScript, Mineflayer
+- **AI / LLM:** OpenAI API (`gpt-5.1`)
+- **Runtime:** Minecraft 1.16.5 **Java Edition** server
 
 The code is structured roughly like this:
 
@@ -57,7 +59,7 @@ _(File names may differ slightly depending on the current refactor, but this is 
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
+### 1. Dependencies
 
 - **Node.js** ≥ 18
 - **npm** or **yarn**
