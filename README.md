@@ -95,6 +95,3 @@ Buddybot-2.0/
 - Persistent long-term memory backed by a vector store.
 - Multi-bot orchestration for raids or automated builds.
 - Integration tests against a headless server (e.g., via Prismarine replay).
-
-## 📄 License
-Distributed under the ISC License. See `package.json` for details.
