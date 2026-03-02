@@ -1,6 +1,6 @@
 # Buddybot 2.0 — AI-Powered Minecraft Companion
 
-[▶️ BuddyBot Demo](https://drive.google.com/file/d/1ZRf-4N3e3UdTzyPqm3Y5LZsE132mHAMC/view?usp=sharing)
+[▶️ BuddyBot Demo](https://drive.google.com/file/d/1ZRf-4N3e3UdTzyPqm3Y5LZsE132mHAMC/view?usp=sharing) (WARNING! Adjust volume before clicking)
 
 ## 🧭 Overview
 Buddybot 2.0 is a mineflayer-based controller that lets you summon an AI-assisted Minecraft helper directly from server chat commands. It listens to `latest.log`, spawns a bot with context-aware behaviors, and answers player questions using OpenAI models.
