@@ -1,5 +1,16 @@
-node_modules/
+.DS_Store
 .env
+.env.*
+!.env.example
+node_modules/
+*.log
 
+mc-server/*.jar
+mc-server/*.json
+mc-server/eula.txt
+mc-server/server.properties
 mc-server/world/
 mc-server/logs/
+mc-server/crash-reports/
+mc-server/libraries/
+mc-server/versions/

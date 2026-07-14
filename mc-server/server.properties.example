@@ -1,0 +1,7 @@
+motd=BuddyBot Local Development Server
+difficulty=easy
+gamemode=survival
+online-mode=true
+server-port=25565
+spawn-protection=16
+view-distance=10
