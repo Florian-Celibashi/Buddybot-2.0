@@ -40,11 +40,12 @@ Buddybot 2.0 is a mineflayer-based controller that lets you summon an AI-assiste
 ```bash
 # 1. Install Node dependencies
 cd buddybot
-npm install
+npm ci
 
-# 2. Accept Minecraft EULA & prepare server (mc-server/eula.txt)
-# 3. Copy .env template and update credentials
-cp .env.example .env  # create this file based on the config below
+# 2. Copy the environment template and add local credentials
+cp .env.example .env
+
+# 3. Follow mc-server/README.md to create a local server
 ```
 
 ## 🔐 Configuration
@@ -75,6 +76,15 @@ In-game chat commands:
 - `!despawn` — disconnect the bot safely.
 Then simply chat with Buddybot; it will answer with OpenAI-generated replies.
 
+## ✅ Quality checks
+
+```bash
+npm ci --prefix buddybot
+npm test --prefix buddybot
+```
+
+GitHub Actions runs the same tests for every pull request and push to `main`.
+
 ## 🗂️ Folder Structure
 ```
 Buddybot-2.0/
@@ -89,7 +99,7 @@ Buddybot-2.0/
 │   │   ├── infra/logWatcher.js  # Log polling + command routing
 │   │   ├── ai/                  # OpenAI client + memory
 │   │   └── mc/                  # Bot behaviors, commands, triggers
-└── mc-server/                   # Local Minecraft server files
+└── mc-server/                   # Setup docs; generated server files are ignored
 ```
 
 ## 🔮 Future Improvements
