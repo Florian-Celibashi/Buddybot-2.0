@@ -1,5 +1,7 @@
 # Buddybot 2.0 — AI-Powered Minecraft Companion
 
+[![CI](https://github.com/Florian-Celibashi/Buddybot-2.0/actions/workflows/ci.yml/badge.svg)](https://github.com/Florian-Celibashi/Buddybot-2.0/actions/workflows/ci.yml)
+
 [▶️ BuddyBot Demo](https://drive.google.com/file/d/1ZRf-4N3e3UdTzyPqm3Y5LZsE132mHAMC/view?usp=sharing) (WARNING! Adjust volume before clicking)
 
 ## 🧭 Overview
@@ -8,7 +10,7 @@ Buddybot 2.0 is a mineflayer-based controller that lets you summon an AI-assiste
 ## ✨ Key Features
 - **Chat-triggered lifecycle**: Use in-game `!spawn` / `!despawn` commands to control the bot without leaving Minecraft.
 - **OpenAI-backed conversations**: Lightweight responder with configurable system prompts, cooldowns, and message length guardrails.
-- **Contextual behaviors**: Includes follow, assist, inventory, and trigger modules built on mineflayer pathfinder + PVP plugins.
+- **Contextual behaviors**: Includes follow, combat assist, inventory summaries, and trigger modules built on mineflayer pathfinder + PVP plugins.
 - **Server-agnostic logging**: Polls any `latest.log` path, handling truncation and rotation gracefully.
 - **Safe shutdown**: Ensures the bot despawns on process exit signals to avoid ghost connections.
 
@@ -74,16 +76,19 @@ npm start
 In-game chat commands:
 - `!spawn` — start Buddybot on the server.
 - `!despawn` — disconnect the bot safely.
+- `!follow` — follow the player who issued the command.
+- `!assist` — toggle combat assistance for that player.
+- `!inventory` — summarize the bot's current inventory in chat.
 Then simply chat with Buddybot; it will answer with OpenAI-generated replies.
 
 ## ✅ Quality checks
 
 ```bash
 npm ci --prefix buddybot
-npm test --prefix buddybot
+npm run check --prefix buddybot
 ```
 
-GitHub Actions runs the same tests for every pull request and push to `main`.
+GitHub Actions runs the same tests and production dependency audit for every pull request and push to `main`. The lockfile includes narrow `uuid@11.1.1` overrides for Mineflayer's Microsoft and Mojang authentication paths while upstream dependency ranges catch up with the patched release.
 
 ## 🗂️ Folder Structure
 ```

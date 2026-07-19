@@ -1,5 +1,6 @@
 const { startFollow } = require('../follow');
 const { startAssist } = require('../assist');
+const { reportInventory } = require('../inventory');
 // src/mc/commands/commands.js
 
 // Legacy fallback messages in case the API is unavailable
@@ -103,21 +104,24 @@ Do NOT add quotation marks around the line.`;
  * Returns true if a command was recognized and handled, false otherwise.
  */
 function handleCommand(bot, username, msg, despawnBot) {
-    // Normalize message (trim + lowercase copy for comparisons if needed)
-    const raw = msg; // keep raw in case we ever need it
     const text = msg.trim();
 
-    if (text.startsWith('!follow')) {
+    if (text === '!follow') {
         startFollow(bot, username);
         return true;
     }
 
-    if (text.startsWith('!assist')) {
+    if (text === '!assist') {
         startAssist(bot, username);
         return true;
     }
 
-    if (text.startsWith('!friendlyfire')) {
+    if (text === '!inventory') {
+        reportInventory(bot);
+        return true;
+    }
+
+    if (text === '!friendlyfire') {
         // Toggle the flag first
         bot.friendlyFire = !bot.friendlyFire;
         const isOn = bot.friendlyFire;
