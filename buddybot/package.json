@@ -31,7 +31,7 @@
     "mineflayer": "^4.33.0",
     "mineflayer-pathfinder": "^2.4.5",
     "mineflayer-pvp": "^1.3.2",
-    "openai": "^6.48.0"
+    "openai": "^6.49.0"
   },
   "overrides": {
     "@azure/msal-node": {
